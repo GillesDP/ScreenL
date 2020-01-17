@@ -1,9 +1,15 @@
 // VARIABLES
-$hex-port--gore: #1E1F4D;
+$hex-mirage: #1E233B;
+$hex-comet: #565A6C;
+$hex-sea--buckthorn: #F8AB30;
+$hex-dodger--blue: #5776FF;
 
 // MAP
 $colors: (
-  black: $hex-port--gore
+  black: $hex-mirage,
+  gray: $hex-comet,
+  orange: $hex-sea--buckthorn,
+  blue: $hex-dodger--blue
 );
 
 @function color($args) {

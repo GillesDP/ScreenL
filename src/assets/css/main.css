@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Titillium+Web:700&display=swap);
+html {
+  font-size: 16px;
+}
+
+* {
+  transition: 0.2s;
+}
+
+.container {
+  overflow: hidden;
+}
+
+::selection {
+  background: #1E233B;
+  color: white;
+}
+
+::-moz-selection {
+  background: #1E233B;
+  color: white;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.preload * {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #1E233B;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+.navbar {
+  background: #5776FF;
+  line-height: 3em;
+}
+.navbar ul {
+  border: 1px solid white;
+  border-radius: 5em;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 0.25em;
+}
+.navbar ul li {
+  margin-left: 1.5em;
+}
+
+.navbar-brand {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5em;
+  color: white;
+}
+.navbar-brand:hover {
+  color: white;
+}
+
+a.nav-link {
+  padding: 0 2em;
+  font-size: 0.9em;
+  font-weight: bold;
+  line-height: 2.75em;
+  color: white;
+}
+
+.navbar-expand-lg .navbar-nav .sign-in {
+  padding: 0 2em;
+  background: #F8AB30;
+  border-radius: 5em;
+}
+.navbar-expand-lg .navbar-nav .sign-in:hover {
+  background: #1E233B;
+}
+
+/*# sourceMappingURL=main.css.map */
