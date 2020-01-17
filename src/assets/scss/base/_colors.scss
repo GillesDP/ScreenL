@@ -1,0 +1,11 @@
+// VARIABLES
+$hex-port--gore: #1E1F4D;
+
+// MAP
+$colors: (
+  black: $hex-port--gore
+);
+
+@function color($args) {
+  @return map-get($colors, $args);
+}
