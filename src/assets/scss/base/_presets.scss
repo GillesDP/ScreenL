@@ -11,7 +11,7 @@ html {scroll-behavior: smooth;}
 }
 
 // HTML ELEMENTS
-h1 {@include font-h1;}
 a:hover {text-decoration: none;}
 input:focus {outline: none;}
 img {pointer-events: none;}
+h1 {@include font-h1;}

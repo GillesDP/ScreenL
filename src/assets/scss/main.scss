@@ -1,7 +1,9 @@
 // IMPORT BASE
-@import 'base/colors';
-@import 'base/config';
-@import 'base/mixins';
-@import 'base/presets';
+@import './base/colors';
+@import './base/config';
+@import './base/mixins';
+@import './base/presets';
 
+@import './components/global';
 @import './components/navbar.scss';
+@import './components/hero.scss';

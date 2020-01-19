@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Titillium+Web:700&display=swap);
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Titillium+Web:700|IM+Fell+Great+Primer+SC&display=swap);
 html {
   font-size: 16px;
 }
@@ -41,13 +42,6 @@ html {
   -o-transition: none !important;
 }
 
-h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5em;
-  font-weight: 600;
-  color: #1E233B;
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -60,8 +54,30 @@ img {
   pointer-events: none;
 }
 
+h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #1E233B;
+}
+
+.underline-mark {
+  position: relative;
+  z-index: 1;
+}
+.underline-mark:after {
+  content: "";
+  width: 100%;
+  height: 0.75rem;
+  position: absolute;
+  background: #F8AB30;
+  bottom: 0.5rem;
+  left: 0;
+  z-index: -1;
+}
+
 .navbar {
-  background: #5776FF;
+  background: transparent;
   line-height: 3em;
 }
 .navbar ul {
@@ -72,6 +88,11 @@ img {
 }
 .navbar ul li {
   margin-left: 1.5em;
+}
+@media (max-width: 991.98px) {
+  .navbar ul li {
+    margin: 0;
+  }
 }
 
 .navbar-brand {
@@ -98,6 +119,56 @@ a.nav-link {
 }
 .navbar-expand-lg .navbar-nav .sign-in:hover {
   background: #1E233B;
+}
+
+.hero {
+  background: #33a1ff;
+  background: linear-gradient(150deg, #33a1ff 0%, #6268ff 100%);
+  text-align: center;
+}
+.hero p, .hero h1 {
+  color: white;
+  display: inline-block;
+  width: 50%;
+}
+@media (max-width: 991.98px) {
+  .hero p, .hero h1 {
+    width: 100%;
+  }
+}
+.hero h1 {
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+}
+@media (max-width: 991.98px) {
+  .hero h1 {
+    font-size: 3em;
+  }
+}
+.hero p {
+  opacity: 0.8;
+}
+
+.heading {
+  padding: 8em 0 16em 0;
+}
+
+.quotes:before, .quotes:after {
+  font-family: "IM Fell Great Primer SC", serif;
+  font-weight: normal;
+  opacity: 0.5;
+  margin: 0 0.5rem;
+}
+@media (max-width: 991.98px) {
+  .quotes:before, .quotes:after {
+    display: none;
+  }
+}
+.quotes:before {
+  content: "“";
+}
+.quotes:after {
+  content: "”";
 }
 
 /*# sourceMappingURL=main.css.map */

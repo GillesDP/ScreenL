@@ -1,5 +1,5 @@
 .navbar {
-   background: color(blue);
+   background: transparent;
    line-height: 3em;
    ul {
       border: 1px solid white;
@@ -8,6 +8,9 @@
       padding: .25em;
       li {
          margin-left: 1.5em;
+         @include max-md {
+            margin: 0;
+         }
       }
    }
 }
