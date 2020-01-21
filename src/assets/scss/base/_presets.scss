@@ -14,4 +14,11 @@ html {scroll-behavior: smooth;}
 a:hover {text-decoration: none;}
 input:focus {outline: none;}
 img {pointer-events: none;}
-h1 {@include font-h1;}
+h1 {
+   @include font-h1;
+   margin-bottom: .5em;
+}
+p {
+   color: color(gray);
+   line-height: 1.8em;
+}

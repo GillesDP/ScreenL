@@ -59,6 +59,12 @@ h1 {
   font-size: 2.5em;
   font-weight: 600;
   color: #1E233B;
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: #565A6C;
+  line-height: 1.8em;
 }
 
 .underline-mark {
@@ -74,6 +80,12 @@ h1 {
   bottom: 0.5rem;
   left: 0;
   z-index: -1;
+}
+
+.subtitle {
+  color: #5776FF;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
 .navbar {
@@ -152,6 +164,11 @@ a.nav-link {
 .heading {
   padding: 8em 0 16em 0;
 }
+@media (max-width: 991.98px) {
+  .heading {
+    padding: 4em 0.5em 22em 0.5em;
+  }
+}
 
 .quotes:before, .quotes:after {
   font-family: "IM Fell Great Primer SC", serif;
@@ -172,7 +189,7 @@ a.nav-link {
 }
 
 .advantages {
-  background: white;
+  background: transparent;
   position: relative;
 }
 .advantages .card {
@@ -182,26 +199,42 @@ a.nav-link {
   background: white;
   border: 0;
   border-radius: 0;
-  margin-top: -5em;
-  position: absolute;
+  margin: -5.5em auto 0 auto;
+  width: 50%;
   z-index: 99;
-  left: 0;
   box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.1);
+  padding: 2em;
+}
+@media (max-width: 991.98px) {
+  .advantages .card {
+    width: 90%;
+    margin-top: -18em;
+  }
 }
 .advantages .card img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1em auto;
 }
-
-.advantages .card .col-lg-3 {
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-}
-.advantages .card .col-lg-3:last-of-type {
-  border: 0;
+.advantages .card-text {
+  margin: 0;
+  width: 20%;
 }
 @media (max-width: 991.98px) {
-  .advantages .card .col-lg-3 {
-    border: 0;
+  .advantages .card-text {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+
+.advantages-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+@media (max-width: 991.98px) {
+  .advantages-wrapper {
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }
 

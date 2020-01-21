@@ -20,6 +20,9 @@
 
 .heading {
    padding: 8em 0 16em 0;
+   @include max-md {
+      padding: 4em .5em 22em .5em;
+   }
 }
 
 .quotes {
