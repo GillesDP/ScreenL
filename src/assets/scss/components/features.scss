@@ -1,0 +1,32 @@
+.features {
+   .card-group {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-top: 2em;
+      @include max-md {margin-top: 1em;}
+   }
+   .card {
+      text-align: center;
+      min-width: 25%;
+      border: 0;
+      margin: 1em 0;
+      background: transparent;
+      @include max-md {
+         min-width: 50%;
+      }
+      img {
+         display: block;
+         margin: 0 auto 1em auto;
+      }
+      p {
+         display: block;
+         padding: 0 .2em;
+         @include max-md {
+            padding: 0;
+            width: 90%;
+            margin: 0 auto;
+         }
+      }
+   }
+}

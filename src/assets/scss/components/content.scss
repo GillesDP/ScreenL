@@ -1,0 +1,14 @@
+.content {
+   position: relative;
+   padding: 8em 0;
+   @include max-md {padding: 4em 0 0 0;}
+   .heading-img {
+      @include max-lg {
+         width: 100%;
+         margin: 2em 0;
+      }
+   }
+}
+.content .container {
+   overflow: visible;
+}

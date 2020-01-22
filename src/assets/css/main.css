@@ -193,7 +193,6 @@ a.nav-link {
   position: relative;
 }
 .advantages .card {
-  color: #1E233B;
   font-weight: bold;
   text-align: center;
   background: white;
@@ -205,9 +204,13 @@ a.nav-link {
   box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.1);
   padding: 2em;
 }
-@media (max-width: 991.98px) {
+@media (max-width: 1199.98px) {
   .advantages .card {
     width: 90%;
+  }
+}
+@media (max-width: 991.98px) {
+  .advantages .card {
     margin-top: -18em;
   }
 }
@@ -217,7 +220,8 @@ a.nav-link {
 }
 .advantages .card-text {
   margin: 0;
-  width: 20%;
+  min-width: 20%;
+  color: #1E233B;
 }
 @media (max-width: 991.98px) {
   .advantages .card-text {
@@ -235,6 +239,65 @@ a.nav-link {
   .advantages-wrapper {
     justify-content: flex-start;
     flex-wrap: wrap;
+  }
+}
+
+.content {
+  position: relative;
+  padding: 8em 0;
+}
+@media (max-width: 991.98px) {
+  .content {
+    padding: 4em 0 0 0;
+  }
+}
+@media (max-width: 1199.98px) {
+  .content .heading-img {
+    width: 100%;
+    margin: 2em 0;
+  }
+}
+
+.content .container {
+  overflow: visible;
+}
+
+.features .card-group {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+@media (max-width: 991.98px) {
+  .features .card-group {
+    margin-top: 1em;
+  }
+}
+.features .card {
+  text-align: center;
+  min-width: 25%;
+  border: 0;
+  margin: 1em 0;
+  background: transparent;
+}
+@media (max-width: 991.98px) {
+  .features .card {
+    min-width: 50%;
+  }
+}
+.features .card img {
+  display: block;
+  margin: 0 auto 1em auto;
+}
+.features .card p {
+  display: block;
+  padding: 0 0.2em;
+}
+@media (max-width: 991.98px) {
+  .features .card p {
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 

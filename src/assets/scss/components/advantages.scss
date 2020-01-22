@@ -2,7 +2,6 @@
    background: transparent;
    position: relative;
    .card {
-      color: color(black);
       font-weight: bold;
       text-align: center;
       background: white;
@@ -13,7 +12,8 @@
       z-index: 99;
       box-shadow: 0 .5rem 5rem rgba(0,0,0,.1);
       padding: 2em;
-      @include max-md {width: 90%; margin-top: -18em;}
+      @include max-lg {width: 90%;}
+      @include max-md {margin-top: -18em;}
       img {
          display: block;
          margin: 0 auto 1em auto;
@@ -21,7 +21,8 @@
    }
    .card-text {
       margin: 0;
-      width: 20%;
+      min-width: 20%;
+      color: color(black);
       @include max-md {
          width: 100%;
          margin-bottom: 2em;
