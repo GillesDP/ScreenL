@@ -1,0 +1,56 @@
+.join {
+   h1 {
+      color: white;
+   }
+   form {
+      width: 60%;
+      position: relative;
+      @include max-md {width: 100%;}
+      label {
+         display: none;
+      }
+      input {
+         background: transparent;
+         border: 0;
+         border-bottom: 1px solid rgba(255,255,255,.5);
+         color: white;
+         &::placeholder {
+            color: rgba(255,255,255,.75);
+         }
+      }
+      button {
+         background: color(orange);
+         color: white;
+         margin-top: 1em;
+         &:after {
+            background: rgba(255,255,255,.1);
+            border: white 1px solid;
+         }
+         &:hover {
+            background: color(black);
+            color: white;
+         }
+      }
+   }
+}
+
+.join .form-side {
+   padding: 6em 4em;
+   background: color(blue);
+   @include max-md {padding: 4em 1em;}
+}
+
+.join .form-group {
+   width: 100%;
+   padding: 0;
+   input {
+      width: 100%;
+      margin-bottom: .5em;
+   }
+   input#lName {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50%;
+   }
+}

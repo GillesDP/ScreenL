@@ -88,6 +88,30 @@ p {
   font-weight: bold;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border-radius: 5em;
+  position: relative;
+}
+button:after {
+  content: "";
+  position: absolute;
+  top: -0.4em;
+  left: -0.4em;
+  right: -0.4em;
+  bottom: -0.4em;
+  border-radius: 5em;
+}
+
 .navbar {
   background: transparent;
   line-height: 3em;
@@ -244,7 +268,7 @@ a.nav-link {
 
 .content {
   position: relative;
-  padding: 8em 0;
+  padding: 4em 0;
 }
 @media (max-width: 991.98px) {
   .content {
@@ -292,12 +316,161 @@ a.nav-link {
 .features .card p {
   display: block;
   padding: 0 0.2em;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 @media (max-width: 991.98px) {
   .features .card p {
     padding: 0;
     width: 90%;
     margin: 0 auto;
+  }
+}
+
+.why {
+  background: #f0f2f5;
+  background: linear-gradient(180deg, #f0f2f5 0%, white 30%, white 100%);
+  padding: 6em 0;
+}
+@media (max-width: 991.98px) {
+  .why {
+    padding: 4em 0;
+  }
+}
+.why p {
+  column-count: 2;
+  column-gap: 2em;
+}
+@media (max-width: 991.98px) {
+  .why p {
+    column-count: 1;
+  }
+}
+.why img {
+  display: block;
+  margin: 4em auto 0 auto;
+}
+@media (max-width: 1199.98px) {
+  .why img {
+    width: 100%;
+  }
+}
+
+.join h1 {
+  color: white;
+}
+.join form {
+  width: 60%;
+  position: relative;
+}
+@media (max-width: 991.98px) {
+  .join form {
+    width: 100%;
+  }
+}
+.join form label {
+  display: none;
+}
+.join form input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+.join form input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+.join form button {
+  background: #F8AB30;
+  color: white;
+  margin-top: 1em;
+}
+.join form button:after {
+  background: rgba(255, 255, 255, 0.1);
+  border: white 1px solid;
+}
+.join form button:hover {
+  background: #1E233B;
+  color: white;
+}
+
+.join .form-side {
+  padding: 6em 4em;
+  background: #5776FF;
+}
+@media (max-width: 991.98px) {
+  .join .form-side {
+    padding: 4em 1em;
+  }
+}
+
+.join .form-group {
+  width: 100%;
+  padding: 0;
+}
+.join .form-group input {
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+.join .form-group input#lName {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+}
+
+footer {
+  border: 10px solid #5776FF;
+  border-top: 0;
+  padding-bottom: 2em;
+}
+@media (max-width: 991.98px) {
+  footer {
+    border: 0;
+    border-bottom: 10px solid #5776FF;
+    padding-bottom: 1em;
+    margin-top: 4em;
+  }
+}
+footer h2 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.5em;
+}
+@media (max-width: 991.98px) {
+  footer h2 {
+    text-align: center;
+  }
+}
+footer ul {
+  margin-bottom: 2em;
+}
+@media (max-width: 991.98px) {
+  footer ul {
+    margin-bottom: 1em;
+  }
+}
+footer ul li {
+  padding-bottom: 0.5em;
+}
+footer ul li:first-child {
+  color: #5776FF;
+  font-weight: bold;
+}
+footer ul li a {
+  color: #1E233B;
+}
+footer ul li a:hover {
+  color: #1E233B;
+  opacity: 0.8;
+}
+
+.copyright {
+  opacity: 0.8;
+}
+@media (max-width: 991.98px) {
+  .copyright {
+    text-align: center;
   }
 }
 
