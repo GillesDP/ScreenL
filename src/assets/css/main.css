@@ -88,6 +88,11 @@ p {
   font-weight: bold;
 }
 
+.down-arrow {
+  display: block;
+  margin: 2em auto;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -286,6 +291,11 @@ a.nav-link {
   overflow: visible;
 }
 
+@media (max-width: 991.98px) {
+  .features {
+    margin-bottom: 2em;
+  }
+}
 .features .card-group {
   display: flex;
   align-items: baseline;
@@ -418,6 +428,146 @@ a.nav-link {
   right: 0;
   top: 0;
   width: 50%;
+}
+
+.meeting {
+  padding: 6em 0;
+}
+@media (max-width: 991.98px) {
+  .meeting {
+    padding: 4em 0;
+  }
+}
+.meeting p {
+  width: 80%;
+}
+.meeting h1 {
+  width: 50%;
+}
+.meeting h1, .meeting p {
+  text-align: center;
+  display: block;
+}
+@media (max-width: 991.98px) {
+  .meeting h1, .meeting p {
+    width: 100%;
+  }
+}
+.meeting img {
+  border-radius: 0.5em;
+}
+.meeting .down-arrow {
+  margin-bottom: 4em;
+}
+
+.meeting-features {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 4em auto 0 auto;
+}
+@media (max-width: 991.98px) {
+  .meeting-features {
+    margin-top: 2em;
+  }
+}
+.meeting-features .card {
+  width: 50%;
+  border: 0;
+  border-radius: 0;
+}
+@media (max-width: 991.98px) {
+  .meeting-features .card {
+    width: 100%;
+  }
+}
+.meeting-features .card-text {
+  display: block;
+  margin: 1em auto 2em auto;
+  width: 80%;
+  position: relative;
+  color: #565A6C;
+}
+@media (max-width: 991.98px) {
+  .meeting-features .card-text {
+    width: 100%;
+  }
+}
+.meeting-features .card-text::before {
+  display: block;
+  width: 100%;
+  z-index: 99;
+  margin-bottom: 1em;
+}
+
+.meeting-features .card {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.meeting-features .card:nth-child(odd) {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 991.98px) {
+  .meeting-features .card:nth-child(odd) {
+    border-right: 0;
+  }
+}
+.meeting-features .card:nth-child(n+7) {
+  border-bottom: 0;
+}
+@media (max-width: 991.98px) {
+  .meeting-features .card:nth-child(n+7) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+@media (max-width: 991.98px) {
+  .meeting-features .card:last-child {
+    border-bottom: 0;
+  }
+}
+
+.meeting-img {
+  position: relative;
+  overflow: hidden;
+}
+.meeting-img img {
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 767.98px) {
+  .meeting-img img {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+}
+.meeting-img img:first-child, .meeting-img img:last-child {
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+  top: 0.5em;
+}
+@media (max-width: 767.98px) {
+  .meeting-img img:first-child, .meeting-img img:last-child {
+    position: static;
+    opacity: 1;
+  }
+}
+.meeting-img img:first-child {
+  left: -5em;
+}
+.meeting-img img:last-child {
+  right: -5em;
+}
+
+.vision {
+  background: #f0f2f5;
+  background: linear-gradient(180deg, #f0f2f5 0%, white 30%, white 100%);
+  padding: 6em 0;
+}
+@media (max-width: 991.98px) {
+  .vision {
+    padding: 4em 0;
+  }
 }
 
 footer {

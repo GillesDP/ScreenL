@@ -9,10 +9,23 @@
    <!-- STYLING -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <link rel="stylesheet" href="./assets/css/main.css">
+   <style>
+      .meeting-features .card .card-text:before {
+         content: url(./assets/images/icons/hexagon.svg);
+      }
+      .hero {
+         background: url(./assets/images/waves@2x.png);
+         background-size: cover;
+      }
+      .join .img-side {
+         background: url(./assets/images/inAction.png);
+         background-size: cover;
+      }
+   </style>
 </head>
 <body class="preload">
 
-   <section class="hero">
+   <section class="hero" id="home">
       <!-- NAV -->
       <nav class="navbar navbar-expand-lg">
          <div class="container">
@@ -20,10 +33,10 @@
          
             <ul class="navbar-nav ml-auto">
                <li class="nav-item d-none d-lg-inline-block">
-                  <a class="nav-link" href="#">HOME</a>
+                  <a class="nav-link" href="#home">HOME</a>
                </li>
                <li class="nav-item d-none d-lg-inline-block">
-                  <a class="nav-link" href="#">CONTACT</a>
+                  <a class="nav-link" href="#joinUsForm">JOIN US</a>
                </li>
                <li class="nav-item">
                   <a class="nav-link sign-in" href="#">SIGN IN</a>
@@ -94,12 +107,12 @@
    <section class="why">
       <div class="container">
          <h1>Why ScreenL is the <span class="underline-mark">way to go</span></h1>
-         <p>If you want to stay on top of things you should put your customers in a center of your business and treat their feedback as the most valuable source for information in your company. They are the ones who use your products and services, so they know best what could be improved to make them even more happy. Never ignore their voice. If you fail to meet their expectations they will find other company which will do it better than you. Use customer feedback at all corporate levels and across all departments in your company. Insights will help you develop your products, improve customer service, and manage customer satisfaction. Thanks to customer feedback you can make sure that your clients will stay with you, be loyal to your brand and in consequence will spread positive word-of-mouth for you. Having devoted brand ambassadors is gold your company needs to grow!</p>
+         <p>If you want to stay on top of things you should put your customers in a center of your business and treat their feedback as the most valuable source for information in your company. They are the ones who use your products and services, so they know best what could be improved to make them even more happy. Never ignore their voice. If you fail to meet their expectations they will find other company which will do it better than you. <br class="d-sm-block d-md-none"/><br class="d-sm-block d-md-none"/>Use customer feedback at all corporate levels and across all departments in your company. Insights will help you develop your products, improve customer service, and manage customer satisfaction. Thanks to customer feedback you can make sure that your clients will stay with you, be loyal to your brand and in consequence will spread positive word-of-mouth for you. Having devoted brand ambassadors is gold your company needs to grow!</p>
       </div>
       <img class="heading-img" src="./assets/images/feedbackCollection@2x.png" width="1221px" alt="Full image of the feedback app on different devices">
    </section>
 
-   <section class="join">
+   <section class="join" id="joinUsForm">
       <div class="row no-gutters">
          <div class="col-lg-5 d-none d-md-block img-side"></div>
          <div class="col-lg-7 form-side">
@@ -128,6 +141,38 @@
                <button type="submit">JOIN NOW</button>
             </form>
          </div>
+      </div>
+   </section>
+
+   <section class="meeting">
+      <div class="container">
+         <h1 class="mx-auto">Made for your business, our <span class="underline-mark">meeting room</span> system</h1>
+         <p class="mx-auto">You can book a meeting directly on the touch screen panel at the meeting room door, on your mobile on your way to work or from your desktop computer. It takes just a tap or two. All information about current and upcoming appointments in the system are centralized and digitized.</p>
+         <img src="./assets/images/icons/arrowDown.svg" class="down-arrow" alt="Arrow down to proceed reading" width="8rem">
+      </div>
+      <div class="meeting-img">
+         <img src="./assets/images/meetingBook@2x.png" width="671px" alt="Meeting room system book a meeting page">
+         <img src="./assets/images/meetingHome@2x.png" width="662px" alt="Meeting room system home page">
+         <img src="./assets/images/meetingConfirm@2x.png" width="673px" alt="Meeting room system confirm a meeting page">
+      </div>
+      <div class="container">
+         <div class="meeting-features">
+            <div class="card"><div class="card-text">Book meeting room directly from the screen outside meeting rooms</div></div>
+            <div class="card"><div class="card-text">Get detailed report on usage of meeting rooms with Company/Team name and hours utilised</div></div>
+            <div class="card"><div class="card-text">Use our API to let your members/employees book the meeting rooms directly from your website</div></div>
+            <div class="card"><div class="card-text">Patent pending technology to unlock meeting room doors with an OTP (pro version)</div></div>
+            <div class="card"><div class="card-text">OTP verification for bookings & SMS confirmations with Date/Time Stamp</div></div>
+            <div class="card"><div class="card-text">Can be used with any Android system or use our screens with anti theft/tamper mounts</div></div>
+            <div class="card"><div class="card-text">Can be used to display adverts</div></div>
+            <div class="card"><div class="card-text">Green/Red outliners for Vacant/Busy status</div></div>
+         </div>
+      </div>
+   </section>
+
+   <section class="vision">
+      <div class="container">
+         <h1>Our Vision</h1>
+         <p>Work hard to know your business. Look for ways to improve your company and its operations.</p>
       </div>
    </section>
 

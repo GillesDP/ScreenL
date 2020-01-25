@@ -1,15 +1,18 @@
 // CUSTOM
-@mixin section-padding($num) {
-   padding: $num 0;
-   @include max-md {
-     padding: $num/2 0;
-   }
+@mixin section-padding {
+   padding: 6em 0;
+   @include max-md {padding: 4em 0;}
 }
 @mixin font-h1 {
    font-family: $titillium-web;
    font-size: 2.5em;
    font-weight: 600;
    color: color(black);
+}
+
+@mixin gradient-background {
+   background: rgb(240,242,245);
+   background: linear-gradient(180deg, rgba(240,242,245,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
 }
 
 // BOOTSTRAP

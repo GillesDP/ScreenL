@@ -1,4 +1,5 @@
 .features {
+   @include max-md {margin-bottom: 2em;}
    .card-group {
       display: flex;
       align-items: baseline;

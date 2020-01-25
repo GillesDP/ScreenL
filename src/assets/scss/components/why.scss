@@ -1,8 +1,6 @@
 .why {
-   background: rgb(240,242,245);
-   background: linear-gradient(180deg, rgba(240,242,245,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
-   padding: 6em 0;
-   @include max-md {padding: 4em 0;}
+   @include gradient-background;
+   @include section-padding;
    p {
       column-count: 2;
       column-gap: 2em;
