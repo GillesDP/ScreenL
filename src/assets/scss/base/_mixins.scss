@@ -9,6 +9,21 @@
    font-weight: 600;
    color: color(black);
 }
+@mixin button {
+   button {
+      background: color(orange);
+      color: white;
+      margin-top: 1em;
+      &:after {
+         background: rgba(255,255,255,.1);
+         border: white 1px solid;
+      }
+      &:hover {
+         background: color(black);
+         color: white;
+      }
+   }
+}
 
 @mixin gradient-background {
    background: rgb(240,242,245);
