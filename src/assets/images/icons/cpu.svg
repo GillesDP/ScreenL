@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+  <g id="Cpu" transform="translate(-0.5 -0.5)">
+    <path id="Path_18" data-name="Path 18" d="M12,40a4,4,0,0,1-4-4V12a4,4,0,0,1,4-4H36a4,4,0,0,1,4,4V36a4,4,0,0,1-4,4Z" fill="none" stroke="#565a6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_19" data-name="Path 19" d="M18,18H30V30H18Z" fill="none" stroke="#565a6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_20" data-name="Path 20" d="M18,2V8" fill="none" stroke="#565a6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_21" data-name="Path 21" d="M30,2V8" fill="none" stroke="#565a6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_22" data-name="Path 22" d="M18,40v6" fill="none" stroke="#565a6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_23" data-name="Path 23" d="M30,40v6" fill="none" stroke="#565a6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_24" data-name="Path 24" d="M40,18h6" fill="none" stroke="#565a6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_25" data-name="Path 25" d="M40,28h6" fill="none" stroke="#565a6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_26" data-name="Path 26" d="M2,18H8" fill="none" stroke="#565a6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_27" data-name="Path 27" d="M2,28H8" fill="none" stroke="#565a6c" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>
